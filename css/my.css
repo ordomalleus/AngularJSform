@@ -1,0 +1,118 @@
+body {
+    background-color: #444;
+}
+
+.form-email {
+    width: 500px;
+    height: 320px;
+    background-color: #F5F5F5;
+    padding: 12px 38px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+emails-editor {
+    width: 100%;
+    background-color: #fff;
+    overflow: auto;
+    padding: 2px 10px;
+    border-top: 1px solid #CCC;
+    height: 100px;
+    display: block;
+    margin-bottom: 60px;
+}
+
+emails-editor form {
+    float: left;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #6699ff;
+    border: none;
+    color: #fff;
+    border-radius: 1px;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+button:nth-child(3) {
+    margin-right: 16px;
+    margin-left: 2px;
+    padding: 6px 22px;
+}
+
+button:nth-child(4) {
+    padding: 6px 13px;
+}
+
+input.form-input {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.email-all {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.mail {
+    padding: 2px 10px;
+    display: inline-block;
+    background-color: #D9E8FF;
+    border-radius: 10px;
+    color: #222;
+    /*float: left;*/
+    margin-right: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.mail.error-mail {
+    border: 1px solid #ac2925;
+ }
+
+.mail p {
+    margin: 0 8px 0 0;
+    padding: 0;
+    float: left;
+    letter-spacing: -0.6px;
+}
+
+.mail span {
+    float: right;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.mail span:hover,
+.text-length span:hover {
+    cursor: pointer;
+}
+
+.text-length {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    width: 200px;
+}
+
+.text-length span {
+    float: right;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+}

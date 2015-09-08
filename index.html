@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>
+        Ангуляр приложение
+    </title>
+    <link href="/framework/bootstrap-3.3.5-dist/!flatly/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/my.css" rel="stylesheet" type="text/css"/>
+    <script src="/js/angular.min.js" type="text/javascript"></script>
+    <script src="/js/angular/app.js" type="text/javascript"></script>
+    <script src="/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/js/my.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-email" ng-app="emailApp" ng-controller="emailController as scope">
+                <h1>Share "Board name" with others</h1>
+                <emails-editor>
+                    <div class="mail" ng-repeat="mail in emailAll" ng-class="{'error-mail': !mail.errorMail}">
+                        <p>{{mail.text}}</p>
+                        <span ng-click="closeMail($index)">×</span>
+                    </div>
+                    <input type="text" class="form-input" placeholder="add more people ..." ng-model="mailText" ng-keypress="addMail()" >
+                </emails-editor>
+                <button ng-click="addEmails()">Add email</button>
+                <button ng-click="getEmailsCount()">Get emails count</button>
+                <div class="alert alert-success text-length" role="alert" ng-show="show === true">
+                    {{test.length}}
+                    <span ng-click="show = false">×</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
